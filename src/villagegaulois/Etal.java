@@ -17,6 +17,16 @@ public class Etal <P extends IProduit> implements IEtal{
 	}
 	
 	@Override
+	public Gaulois getVendeur() {
+		return vendeur;
+	}
+
+	@Override
+	public double donnerPrix() {
+		return prix;
+	}
+	
+	@Override
 	public int contientProduit(String produit, int quantiteSouhaitee) {
 		int quantiteAVendre = 0;
 		if(nbProduit != 0 && this.produits[0].getNom().equals(produit)) {
