@@ -34,13 +34,11 @@ public class ScenarioTest{
 		Poisson poisson1 = new Poisson("lundi");
 		Poisson[] poissons = {poisson1};
 		
-		IEtal[] marche = new Etal[3];
+		//IEtal[] marche = new Etal[3];
 		Etal<Sanglier> etalSanglier1 = new Etal<>();
 		Etal<Sanglier> etalSanglier2 = new Etal<>();
 		Etal<Poisson> etalPoisson = new Etal<>();
-		marche[0]= etalSanglier1;
-		marche[1] = etalSanglier2;
-		marche[2] = etalPoisson;
+		IEtal[] marche = {etalSanglier1, etalSanglier2, etalPoisson};
 		
 	
 		etalSanglier1.installerVendeur(asterix, sangliersAsterix, 10);

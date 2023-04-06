@@ -8,12 +8,10 @@ public class Poisson extends Produit{
 		this.date = date;
 	}
 
-	@Override
 	public String description() {
 		return "poisson pêché " + date + ".";
 	}
 	
-	@Override
 	public double calculerPrix(int prix) {
 		return prix;
 	}
